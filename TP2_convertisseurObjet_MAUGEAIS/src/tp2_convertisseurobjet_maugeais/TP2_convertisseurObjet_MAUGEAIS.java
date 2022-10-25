@@ -16,6 +16,9 @@ public class TP2_convertisseurObjet_MAUGEAIS {
     public static void main(String[] args) {
         // TODO code application logic here
         
+        Convertisseur C_K = new Convertisseur();
+        C_K.CelsiusversKelvin(1.0);
+        
         
         
         
