@@ -27,6 +27,35 @@ public class TP2_Bieres_MAUGEAIS {
         BouteilleBiere cinquièmeBiere = new BouteilleBiere("Heineken,",5.0,"Brasserie Heineken");
         cinquièmeBiere.lireEtiquette();
         
+        
+        System.out.println(cinquièmeBiere.Décapsuler());// 1er test pour cette bière
+        System.out.println(cinquièmeBiere.Décapsuler());// 2eme test pour cette bière
+        
+        
+        
+        System.out.println(uneBiere) ;
+        
+        BouteilleBiere sixBiere = new BouteilleBiere("Grimbergen,",6.0,"Abbaye de Grimbergen");
+        sixBiere.lireEtiquette(); //création d'une dernière bierre
+        
+        cinquièmeBiere.Décapsuler();
+        deuxièmeBiere.Décapsuler();
+        
+        // Test Question 14
+        System.out.println("\n RESULTATS QUESTION 14\n ");
+        
+        System.out.println(deuxièmeBiere) ;
+        System.out.println(troisièmeBiere) ;
+        System.out.println(quatrièmeBiere) ;
+        System.out.println(cinquièmeBiere) ;
+        
+        
+        
+        
+
+
+       
+        
 
 
     }
