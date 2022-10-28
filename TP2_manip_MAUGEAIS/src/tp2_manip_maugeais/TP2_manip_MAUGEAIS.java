@@ -42,6 +42,14 @@ public class TP2_manip_MAUGEAIS {
         System.out.println("nb de calories de Assiette 2 : " + assiette2.nbCalories) ;
         
        // Question 6 : Non les 2 sont fausses et non on ne peut pas avoir une référence objet qui en annonce une et qui en annonce une autre avec aucun rapport.
+       Moussaka  TM[] = new Moussaka[10]; 
+       for (int i=0  ; i< TM.length ; i++){
+           TM[i] = new Moussaka(50*i+100);
+       }
+    
+    
+    
     }
+    
     
 }
