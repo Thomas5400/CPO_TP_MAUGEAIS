@@ -16,8 +16,8 @@ public class TP2_Bieres_MAUGEAIS {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        BouteilleBiere uneBiere = new BouteilleBiere("Cuvee des trolls",7.0,"Dubuisson") ;
-        uneBiere.lireEtiquette();
+        BouteilleBiere uneBiere = new BouteilleBiere("Cuvee des trolls",7.0,"Dubuisson") ;//on crée des bieres grace au constructeur
+        uneBiere.lireEtiquette();//et on affiche leur etiquette grace a la methode lire etiquette
         BouteilleBiere deuxièmeBiere = new BouteilleBiere("Leffe",6.6,"Abbaye de Leffe");
         deuxièmeBiere.lireEtiquette();
         BouteilleBiere troisièmeBiere = new BouteilleBiere("Skoll",6.0,"Brasserie Kronenbourg");
@@ -33,12 +33,12 @@ public class TP2_Bieres_MAUGEAIS {
         
         
         
-        System.out.println(uneBiere) ;
+        System.out.println(uneBiere) ;// on affiche l'etat de cette biere ouverte ou non 
         
         BouteilleBiere sixBiere = new BouteilleBiere("Grimbergen,",6.0,"Abbaye de Grimbergen");
-        sixBiere.lireEtiquette(); //création d'une dernière bierre
+        sixBiere.lireEtiquette(); //création d'une dernière bierre et on lit son etiquette
         
-        cinquièmeBiere.Décapsuler();
+        cinquièmeBiere.Décapsuler();// on decapsule ces bieres 
         deuxièmeBiere.Décapsuler();
         
         // Test Question 14
