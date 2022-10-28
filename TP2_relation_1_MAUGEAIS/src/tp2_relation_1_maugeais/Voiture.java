@@ -13,11 +13,15 @@ public class Voiture {
     String Modele;
     String Marque;
     int PuissanceCV;
+    Personne Proprietaire ;
+
     
     public Voiture(String un_modele, String une_marque, int puissance){
         Modele= un_modele;
         Marque= une_marque;
         PuissanceCV= puissance;
+        Proprietaire = null;
+        
     }  
     @Override
     public String toString () {
