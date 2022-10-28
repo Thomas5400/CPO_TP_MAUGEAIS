@@ -10,4 +10,17 @@ package tp2_relation_1_maugeais;
  */
 public class Personne {
     
+    String nom;
+    String prenom;
+    
+    public Personne(String un_nom, String un_prenom){
+        nom = un_nom;
+        prenom= un_prenom;
+        
+    }
+    
+    @Override
+    public String toString () {
+    return "Prenom : "+ prenom+ "Nom : "+ nom;
+    }
 }

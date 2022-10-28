@@ -10,4 +10,18 @@ package tp2_relation_1_maugeais;
  */
 public class Voiture {
     
+    String Modele;
+    String Marque;
+    int PuissanceCV;
+    
+    public Voiture(String un_modele, String une_marque, int puissance){
+        Modele= un_modele;
+        Marque= une_marque;
+        PuissanceCV= puissance;
+    }  
+    @Override
+    public String toString () {
+    return "Marque : "+ Marque+ "Modèle : "+ Modele+ "Puissance : "+ PuissanceCV;
+}
+
 }
