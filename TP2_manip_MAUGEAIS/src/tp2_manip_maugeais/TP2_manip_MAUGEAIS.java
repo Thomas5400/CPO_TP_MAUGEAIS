@@ -25,7 +25,7 @@ public class TP2_manip_MAUGEAIS {
 //affichage des calories de assiette 3 et 2.
 
 
-        assiette2.nbCalories += 150;
+        assiette2.nbCalories += 150;// Incrementation de assiette 2 qui va affecter l'assiette 3
         
         System.out.println("\n Ajout de 150 calories à assiette 2 \n \n") ;
         System.out.println("nb de calories de Assiette 2 : " + assiette2.nbCalories) ;
@@ -37,14 +37,15 @@ public class TP2_manip_MAUGEAIS {
         assiette1.nbCalories = assiette2.nbCalories;
         assiette2.nbCalories = v;
         
-        System.out.println("\n Inversion de assiettes 1 et 2\n \n") ;
+        System.out.println("\n Inversion de assiettes 1 et 2\n \n") ;//Inversion de assiettes 1 et 2 affichage
         System.out.println("nb de calories de Assiette 1 : " + assiette1.nbCalories) ;
         System.out.println("nb de calories de Assiette 2 : " + assiette2.nbCalories) ;
         
        // Question 6 : Non les 2 sont fausses et non on ne peut pas avoir une référence objet qui en annonce une et qui en annonce une autre avec aucun rapport.
+       
        Moussaka  TM[] = new Moussaka[10]; 
        for (int i=0  ; i< TM.length ; i++){
-           TM[i] = new Moussaka(50*i+100);
+           TM[i] = new Moussaka(50*i+100); // Création du tableau
        }
     
     
