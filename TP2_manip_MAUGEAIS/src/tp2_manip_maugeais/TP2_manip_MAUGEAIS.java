@@ -40,6 +40,8 @@ public class TP2_manip_MAUGEAIS {
         System.out.println("\n Inversion de assiettes 1 et 2\n \n") ;
         System.out.println("nb de calories de Assiette 1 : " + assiette1.nbCalories) ;
         System.out.println("nb de calories de Assiette 2 : " + assiette2.nbCalories) ;
+        
+       // Question 6 : Non les 2 sont fausses et non on ne peut pas avoir une référence objet qui en annonce une et qui en annonce une autre avec aucun rapport.
     }
     
 }
