@@ -21,6 +21,6 @@ public class Personne {
     
     @Override
     public String toString () {
-    return "Prenom : "+ prenom+ "Nom : "+ nom;
+    return "Prenom : "+ prenom+ "     Nom : "+ nom;
     }
 }

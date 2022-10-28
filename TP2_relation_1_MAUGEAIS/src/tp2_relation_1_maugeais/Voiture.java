@@ -21,7 +21,7 @@ public class Voiture {
     }  
     @Override
     public String toString () {
-    return "Marque : "+ Marque+ "Modèle : "+ Modele+ "Puissance : "+ PuissanceCV;
+    return "Marque : "+ Marque+ "    Modele : "+ Modele+ "    Puissance : "+ PuissanceCV+ " chevaux";
 }
 
 }
