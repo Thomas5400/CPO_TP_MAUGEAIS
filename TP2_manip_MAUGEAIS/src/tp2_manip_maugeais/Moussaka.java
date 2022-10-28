@@ -8,10 +8,10 @@ package tp2_manip_maugeais;
  *
  * @author thoma
  */
-public class Moussaka {
-    int nbCalories;
+public class Moussaka { // création d'une classe moussaka avec
+    int nbCalories;//attributs correspondant au nombre de calories
     
     public Moussaka(int kmc){
-        nbCalories = kmc;
+        nbCalories = kmc;// les calories de la moussaka sont la variable d'entrée kmc
     }
 }

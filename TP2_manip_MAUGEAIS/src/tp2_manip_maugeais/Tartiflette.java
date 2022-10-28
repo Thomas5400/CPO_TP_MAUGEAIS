@@ -8,11 +8,11 @@ package tp2_manip_maugeais;
  *
  * @author thoma
  */
-public class Tartiflette {
-    int nbCalories;
+public class Tartiflette {//création classe tartiflette
+    int nbCalories;//attributs correspondant au nombre de calories 
     
     public Tartiflette (int kc){
-        nbCalories = kc;
+        nbCalories = kc;// les calories de la tartiflette sont la variable d'entrée kc
     }
     
 }
