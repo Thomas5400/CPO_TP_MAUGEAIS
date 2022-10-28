@@ -15,10 +15,20 @@ public class TP2_convertisseurObjet_MAUGEAIS {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Convertisseur Cel = new Convertisseur ();
+        System.out.println(Cel.CelsiusversKelvin(33));
+        System.out.println(Cel.CelsiusversFarenheit(33));
         
-        Convertisseur C_K = new Convertisseur();
-        C_K.CelsiusversKelvin(1.0);
+        Convertisseur Kel = new Convertisseur();
+        System.out.println(Kel.KelvinversCelsius(300));
+        System.out.println(Kel.KelvinversFarenheit(300));
+        System.out.println(Kel.KelvinversFarenheit(450));
         
+        
+        System.out.println(Cel.toString());
+        System.out.println(Kel.toString());
+
+
         
         
         
