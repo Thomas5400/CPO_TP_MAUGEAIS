@@ -23,8 +23,8 @@ public class Personne {
         
     }
     
-    public boolean ajouter_voiture(Voiture voiture_a_ajouter){
-        if (voiture_a_ajouter.Proprietaire == null){
+    public boolean ajoutervoiture(Voiture voiture_a_ajouter){
+        if (voiture_a_ajouter.Proprietaire != null){
             return false;
         }
         else{
