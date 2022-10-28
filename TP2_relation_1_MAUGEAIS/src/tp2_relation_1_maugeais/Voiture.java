@@ -10,21 +10,21 @@ package tp2_relation_1_maugeais;
  */
 public class Voiture {
     
-    String Modele;
+    String Modele;  // On rentre les attributs de la classe voiture 
     String Marque;
     int PuissanceCV;
     Personne Proprietaire ;
 
     
-    public Voiture(String un_modele, String une_marque, int puissance){
+    public Voiture(String un_modele, String une_marque, int puissance){ // la construction d'une voiture avec les attributs comme variables d'entrée
         Modele= un_modele;
         Marque= une_marque;
         PuissanceCV= puissance;
-        Proprietaire = null;
+        Proprietaire = null;// ne possède aucun propriétaire au début
         
     }  
     @Override
-    public String toString () {
+    public String toString () {//to String permet de renvoyer à l'utilisateur un résultat de manière "claire" des attributs que l'on a pour une voiture
     return "Marque : "+ Marque+ "    Modele : "+ Modele+ "    Puissance : "+ PuissanceCV+ " chevaux";
 }
 
