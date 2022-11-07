@@ -13,11 +13,6 @@ public class PremiereintGraphique_MAUGEAIS {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-        // TODO code application logic here
-        
-        
-        
-    }
+    
     
 }
