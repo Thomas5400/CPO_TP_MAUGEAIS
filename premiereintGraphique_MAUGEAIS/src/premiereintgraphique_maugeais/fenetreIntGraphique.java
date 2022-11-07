@@ -33,7 +33,7 @@ public class fenetreIntGraphique extends javax.swing.JFrame {
     private void initComponents() {
 
         Message_Bienvenue = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        Validation_prénom = new javax.swing.JButton();
         Réponse = new javax.swing.JTextField();
         Consigne = new javax.swing.JLabel();
         Réponse_aff = new javax.swing.JLabel();
@@ -42,15 +42,17 @@ public class fenetreIntGraphique extends javax.swing.JFrame {
         repsalaire = new javax.swing.JTextField();
         salaireUp = new javax.swing.JToggleButton();
         SalaireUp = new javax.swing.JLabel();
+        Infos = new javax.swing.JLabel();
+        AffInfos = new javax.swing.JToggleButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         Message_Bienvenue.setText("Bienvenue");
 
-        jButton1.setText("Valider");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        Validation_prénom.setText("Valider");
+        Validation_prénom.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                Validation_prénomActionPerformed(evt);
             }
         });
 
@@ -66,6 +68,7 @@ public class fenetreIntGraphique extends javax.swing.JFrame {
 
         affrep.setText("Prénom");
 
+        QuestSal.setBackground(new java.awt.Color(0, 0, 0));
         QuestSal.setText("Votre Salaire:");
 
         repsalaire.addActionListener(new java.awt.event.ActionListener() {
@@ -74,6 +77,7 @@ public class fenetreIntGraphique extends javax.swing.JFrame {
             }
         });
 
+        salaireUp.setBackground(new java.awt.Color(0, 153, 0));
         salaireUp.setText("Augmenter le salaire");
         salaireUp.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -81,80 +85,94 @@ public class fenetreIntGraphique extends javax.swing.JFrame {
             }
         });
 
+        AffInfos.setBackground(new java.awt.Color(255, 51, 51));
+        AffInfos.setText("Afficher les informations");
+        AffInfos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AffInfosActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(affrep, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(183, 183, 183))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(24, 24, 24)
-                .addComponent(QuestSal, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(SalaireUp, javax.swing.GroupLayout.PREFERRED_SIZE, 242, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(repsalaire, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
-                        .addComponent(salaireUp)
-                        .addGap(23, 23, 23))))
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(96, 96, 96)
+                        .addGap(24, 24, 24)
+                        .addComponent(QuestSal, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(92, 92, 92)
+                        .addComponent(repsalaire, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(58, 58, 58)
+                        .addComponent(salaireUp))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(325, 325, 325)
+                        .addComponent(Message_Bienvenue))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(98, 98, 98)
                         .addComponent(Consigne)
-                        .addGap(18, 18, 18)
-                        .addComponent(Réponse, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(66, 66, 66)
+                        .addComponent(Réponse, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(46, 46, 46)
+                        .addComponent(Validation_prénom))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(63, 63, 63)
-                        .addComponent(Réponse_aff)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(Message_Bienvenue)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(79, 79, 79)
+                        .addComponent(Réponse_aff)
+                        .addGap(18, 18, 18)
+                        .addComponent(affrep, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(238, 238, 238)
+                        .addComponent(SalaireUp, javax.swing.GroupLayout.PREFERRED_SIZE, 242, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(50, 50, 50)
+                        .addComponent(Infos, javax.swing.GroupLayout.PREFERRED_SIZE, 399, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(AffInfos, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(202, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(37, 37, 37)
+                .addGap(20, 20, 20)
                 .addComponent(Message_Bienvenue)
-                .addGap(34, 34, 34)
+                .addGap(28, 28, 28)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Consigne)
                     .addComponent(Réponse, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Consigne))
-                .addGap(18, 18, 18)
+                    .addComponent(Validation_prénom))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Réponse_aff)
                     .addComponent(affrep))
-                .addGap(22, 22, 22)
-                .addComponent(jButton1)
-                .addGap(32, 32, 32)
+                .addGap(65, 65, 65)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(QuestSal)
+                    .addComponent(QuestSal, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(repsalaire, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(salaireUp))
-                .addGap(58, 58, 58)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(SalaireUp, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(60, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Infos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(47, 47, 47))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(38, 38, 38)
+                        .addComponent(AffInfos, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(72, Short.MAX_VALUE))))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void Validation_prénomActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Validation_prénomActionPerformed
         // TODO add your handling code here:
         String a = Réponse.getText();
         Réponse_aff.setVisible(true);
         affrep.setVisible(true);     
         affrep.setText(a);
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_Validation_prénomActionPerformed
 
     private void RéponseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RéponseActionPerformed
         // TODO add your handling code here:
@@ -171,6 +189,17 @@ public class fenetreIntGraphique extends javax.swing.JFrame {
         sal_int = sal_int * 2;
         SalaireUp.setText("Votre nouveau salaire: "+sal_int+"€");
     }//GEN-LAST:event_salaireUpActionPerformed
+
+    private void AffInfosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AffInfosActionPerformed
+        // TODO add your handling code here:
+        String a = Réponse.getText();
+        String sal = repsalaire.getText();
+        int sal_int = Integer.parseInt(sal);
+        sal_int = sal_int * 2;
+        Infos.setText("Vous vous appellez : "+ a+ "Votre salaire est de:     "+ sal+ "Votre nouveau salaire est de:     "+ sal_int);
+        
+        
+    }//GEN-LAST:event_AffInfosActionPerformed
 
     /**
      * @param args the command line arguments
@@ -208,14 +237,16 @@ public class fenetreIntGraphique extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JToggleButton AffInfos;
     private javax.swing.JLabel Consigne;
+    private javax.swing.JLabel Infos;
     private javax.swing.JLabel Message_Bienvenue;
     private javax.swing.JLabel QuestSal;
     private javax.swing.JTextField Réponse;
     private javax.swing.JLabel Réponse_aff;
     private javax.swing.JLabel SalaireUp;
+    private javax.swing.JButton Validation_prénom;
     private javax.swing.JLabel affrep;
-    private javax.swing.JButton jButton1;
     private javax.swing.JTextField repsalaire;
     private javax.swing.JToggleButton salaireUp;
     // End of variables declaration//GEN-END:variables
