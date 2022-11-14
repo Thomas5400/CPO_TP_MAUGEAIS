@@ -15,6 +15,12 @@ public class TP3_MAUGEAIS_Thomas {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        Arme uneEpee = new Arme("Epee",12);
+        System.out.println(uneEpee) ;
+        
+        
+        
     }
     
 }
