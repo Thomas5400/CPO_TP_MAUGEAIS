@@ -16,8 +16,11 @@ public class TP3_MAUGEAIS_Thomas {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        Arme uneEpee = new Arme("Epee",12);
-        System.out.println(uneEpee) ;
+        Epée Epee_1st = new Epée(5,"Excalibur",7);
+        System.out.println(Epee_1st) ;
+        
+        Epée Epee_2nd = new Epée(5,"Excalibur",7);
+        System.out.println(Epee_2nd) ;
         
         
         

@@ -30,4 +30,9 @@ public class Epée extends Arme {
             this.finesse=finesse;
         }
     }
+    
+    @Override
+    public String toString () {//to String permet de renvoyer à l'utilisateur un résultat de manière "claire" les caractéristiques de l'arme
+          return "Epee{"+ "Nom = "+ Nom+ "Attaque = "+ Attaque + "Finesse = "+ finesse+ "}"  ;
+    }
 }
