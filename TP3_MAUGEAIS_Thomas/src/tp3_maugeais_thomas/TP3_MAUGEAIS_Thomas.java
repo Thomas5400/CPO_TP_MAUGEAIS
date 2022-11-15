@@ -19,8 +19,15 @@ public class TP3_MAUGEAIS_Thomas {
         Epée Epee_1st = new Epée(5,"Excalibur",7);
         System.out.println(Epee_1st) ;
         
-        Epée Epee_2nd = new Epée(5,"Excalibur",7);
+        Epée Epee_2nd = new Epée(7,"Durandal",4);
         System.out.println(Epee_2nd) ;
+        
+        Baton Baton_1st = new Baton(5,"Chêne",4);
+        System.out.println(Baton_1st);
+        
+        Baton Baton_2nd = new Baton(6,"Charme",5);
+        System.out.println(Baton_2nd);
+        
         
         
         

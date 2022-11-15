@@ -32,7 +32,7 @@ public class Baton extends Arme {
     }
     @Override
     public String toString () {//to String permet de renvoyer à l'utilisateur un résultat de manière "claire" les caractéristiques de l'arme
-          return "Baton{"+ "Age = "+ age+ "}";
+          return "Baton{"+ "Nom = "+ Nom+ "    Attaque = "+ Attaque + "     Age = "+ age+ "}"  ;
     }
 }  
 
