@@ -4,6 +4,9 @@
  */
 package tp3_maugeais_thomas;
 
+import Personnages.Guerrier;
+import Personnages.Magicien;
+import Personnages.Personnage;
 import Armes.Epée;
 import Armes.Baton;
 import Armes.Arme;
