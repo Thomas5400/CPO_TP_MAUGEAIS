@@ -4,6 +4,8 @@
  */
 package tp3_maugeais_thomas;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author thoma
@@ -27,6 +29,17 @@ public class TP3_MAUGEAIS_Thomas {
         
         Baton Baton_2nd = new Baton(6,"Charme",5);
         System.out.println(Baton_2nd);
+        
+        ArrayList<Arme> Armes_du_Y = new ArrayList<Arme>();
+        Armes_du_Y.add(Epee_1st);
+        Armes_du_Y.add(Epee_2nd);
+        Armes_du_Y.add(Baton_1st);
+        Armes_du_Y.add(Baton_2nd);
+        
+        System.out.println(Armes_du_Y);
+
+       
+        
         
         
         
