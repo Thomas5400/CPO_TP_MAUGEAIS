@@ -60,11 +60,11 @@ public class TP3_MAUGEAIS_Thomas {
         PersoduLore.add(Lannister);
         PersoduLore.add(Conan);
         
-        Gandalf.setArme(Baton_1st);
+        Gandalf.setArme(Baton_1st);//ajouts d'armes
         Gandalf.setArme(Baton_2nd);
         Lannister.setArme(Epee_1st);
         
-        System.out.println(Gandalf.Inventaire_Armes);
+        System.out.println(Gandalf.Inventaire_Armes);//Test ajouts d'armes
         System.out.println(Lannister.Inventaire_Armes);
 
 

@@ -36,5 +36,7 @@ public class Personnage {
         
         }
     
+    Arme Arme_Portée=null;//Initialisation de  l'arme portée
+    
 }
 
