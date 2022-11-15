@@ -4,6 +4,9 @@
  */
 package tp3_maugeais_thomas;
 
+import Armes.Epée;
+import Armes.Baton;
+import Armes.Arme;
 import java.util.ArrayList;
 
 /**
