@@ -40,6 +40,28 @@ public class TP3_MAUGEAIS_Thomas {
         Armes_du_Y.add(Baton_2nd);
         
         System.out.println(Armes_du_Y);
+        
+        Magicien Gandalf = new Magicien(true,"Gandalf",65);
+        System.out.println(Gandalf);
+        Magicien Garcimore = new Magicien(false,"Garcimore",44);
+        System.out.println(Garcimore);
+        
+        Guerrier Lannister = new Guerrier(true,"Lannister",45);
+        System.out.println(Lannister);
+        Guerrier Conan = new Guerrier(false,"Conan",78);
+        System.out.println(Conan);
+        
+        ArrayList<Personnage> PersoduLore = new ArrayList<Personnage>();
+        PersoduLore.add(Gandalf);
+        PersoduLore.add(Garcimore);
+        PersoduLore.add(Lannister);
+        PersoduLore.add(Conan);
+        
+        
+
+
+
+
 
        
         
