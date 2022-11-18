@@ -11,20 +11,20 @@ import Personnages.Personnage;
  * @author thoma
  */
 public class Guerrier extends Personnage {
-    private boolean Cheval;
+    private boolean Cheval;//attribut cheval du guerrier
     
-    public Guerrier (boolean Cheval,String Name, int LP){
-        super (Name,LP);
+    public Guerrier (boolean Cheval,String Name, int LP){//Constructeur du guerrier
+        super (Name,LP);//reutilisation attributs personnage
         this.Cheval= Cheval ;   
     }
-    public void setHorse(boolean Cheval){
+    public void setHorse(boolean Cheval){//changer la condition cheval du guerrier
         this.Cheval=Cheval;
         
     }
     
     
         @Override
-    public String toString () {//to String permet de renvoyer à l'utilisateur un résultat de manière "claire" les caractéristiques de l'arme
+    public String toString () {//to String permet de renvoyer à l'utilisateur un résultat de manière "claire" les caractéristiques de guerrier
     return "Guerrier{"+ "Nom : "+ Nom_perso+ "    A cheval ? : "+ Cheval + "     Points de vie = "+ Life+ "}"  ;
     }
 }

@@ -12,20 +12,20 @@ import Personnages.Personnage;
  */
 public class Magicien extends Personnage{
 
-    private boolean Confirmé;
+    private boolean Confirmé;//Attribut pour le magicien si confirme ou non 
     
-    public Magicien (boolean Confirmé,String Name, int LP){
+    public Magicien (boolean Confirmé,String Name, int LP){//constructeur du magicien reutilisant les attributs du constructeur de personnages
         super (Name,LP);
         this.Confirmé= Confirmé ;   
     }
     
-    public void setConfirm(boolean Confirmé){
+    public void setConfirm(boolean Confirmé){//méthode pour changer l'attribut confirme du magicien 
         this.Confirmé=Confirmé;
         
     }
     
     @Override
-    public String toString () {//to String permet de renvoyer à l'utilisateur un résultat de manière "claire" les caractéristiques de l'arme
+    public String toString () {//to String permet de renvoyer à l'utilisateur un résultat de manière "claire" les caractéristiques de magicien
     return "Guerrier{"+ "Nom : "+ Nom_perso+ "    Confirmé ? : "+ Confirmé + "     Points de vie = "+ Life+ "}"  ;
     }
     

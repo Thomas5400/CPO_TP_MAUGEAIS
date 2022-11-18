@@ -11,11 +11,11 @@ import Armes.Arme;
  * @author thoma
  */
 public class Baton extends Arme {
-    private int age;
+    private int age;//on crée la variable age
     
-    public Baton (int age,String N, int ATT){
+    public Baton (int age,String N, int ATT){//constructeur de l'arme Baton 
         super (N,ATT);
-        if (age>=0&age<100){
+        if (age>=0&age<100){//Condition sur l'age du baton pour le crée
             this.age=age;
         }
         else{
@@ -23,11 +23,11 @@ public class Baton extends Arme {
         }
     }
     
-    public int getAge(){
+    public int getAge(){//méthode pour avoir l'age
         return age;
     }
     
-    public void setAge(int age ){
+    public void setAge(int age ){//méthode pour changer l'age
         if (age<=100&age>=0){
             this.age=age;
         }

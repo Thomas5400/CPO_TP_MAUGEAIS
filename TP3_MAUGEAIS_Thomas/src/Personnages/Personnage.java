@@ -12,10 +12,10 @@ import java.util.ArrayList;
  * @author thoma
  */
 public class Personnage {
-    String Nom_perso;
+    String Nom_perso;//attributs
     int Life;
     
-    public Personnage(String NomduPerso, int Vie){
+    public Personnage(String NomduPerso, int Vie){//constructeur personnage
         Nom_perso = NomduPerso;
         Life = Vie;
     }
@@ -24,14 +24,14 @@ public class Personnage {
     return "Nom du personnage :"+ Nom_perso+ "\nPoints de vie : "+ Life;
     }
     
-    public ArrayList<Arme> Inventaire_Armes = new ArrayList<Arme>();
+    public ArrayList<Arme> Inventaire_Armes = new ArrayList<Arme>();//tableau dynamique avec l'inventaire de l'arme
     
-    public void setArme(Arme weapon){
+    public void setArme(Arme weapon){//Methode pour ajouter une arme à l'inventaire
         if (Inventaire_Armes.size()<=5){
             Inventaire_Armes.add(weapon);
         }
         else{
-            System.out.println("Ajout impossible, inventaire plein");
+            System.out.println("Ajout impossible, inventaire plein");//si inventaire plein alors impossible d'ajouter un nouvel item
         }
         
         }

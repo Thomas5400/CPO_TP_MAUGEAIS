@@ -14,10 +14,10 @@ public class Arme { //Création classe arme
     
     public Arme(String NOM_ARME, int ATT_ARME){//Constructeur d'une arme
         if (ATT_ARME>100|| ATT_ARME<0){
-            System.out.println("Impossible cette arme doit avoir une attaque comprise entre 0 et 100");
+            System.out.println("Impossible cette arme doit avoir une attaque comprise entre 0 et 100");//SI arme non entre 0 et 100 impossible
         }
         else{  
-            Nom = NOM_ARME;
+            Nom = NOM_ARME;// Sinon on crée l'arme
             Attaque = ATT_ARME;      
         } 
  

@@ -13,9 +13,9 @@ import Armes.Arme;
 public class Epée extends Arme {
     private int finesse;
     
-    public Epée (int finesse,String N, int ATT){
-        super (N,ATT);
-        if (finesse>=0&finesse<100){
+    public Epée (int finesse,String N, int ATT){//constructeur epee
+        super (N,ATT);//on réutilise les attribut du constructeur d'arme
+        if (finesse>=0&finesse<100){//condition sur la finesse de l'epee
             this.finesse=finesse;
         }
         else{
@@ -23,11 +23,11 @@ public class Epée extends Arme {
         }
     }
     
-    public int getFinesse(){
+    public int getFinesse(){//méthode pour avoir la finesse 
         return finesse;
     }
     
-    public void setFinesse(int finesse ){
+    public void setFinesse(int finesse ){//méthode pour changer la finesse de l'arme la finesse
         if (finesse<=100&finesse>=0){
             this.finesse=finesse;
         }
